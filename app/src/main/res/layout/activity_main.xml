@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2px"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="2px">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:padding="5px"
+                android:text="姓名："
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nametext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:ems="10"
+                android:hint="请输入姓名"
+                android:inputType="textPersonName|text"
+                android:padding="5px"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                app:srcCompat="@android:drawable/stat_sys_vp_phone_call" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:padding="5px"
+                android:text="电话："
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phonetext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:ems="10"
+                android:hint="请输入电话"
+                android:inputType="phone"
+                android:padding="5px"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5px"
+                android:text="电子邮件："
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailtext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:ems="10"
+                android:hint="请输入Email"
+                android:inputType="textShortMessage|textLongMessage|number"
+                android:padding="5px"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/btn_dialog"
+                android:text="Button"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/btn_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/btn_dialog"
+                android:text="Edittext"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/btn_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/btn_dialog"
+                android:text="Radiobutton"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/btn_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/btn_dialog"
+                android:text="Checkbox"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/btn_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/btn_dialog"
+                android:text="Imageview"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/btn_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/btn_dialog"
+                android:text="Webview"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/btn_toast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/btn_dialog"
+                android:text="Toast"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/btn_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/btn_dialog"
+                android:text="AlterDialog"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/btn_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/btn_dialog"
+                android:text="Progress"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CheckBox" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊懂得都懂打点滴打点滴多多打点滴打点滴多多多多多多" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
